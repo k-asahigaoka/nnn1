@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>サイバネティクス学者たち 図解</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .box {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .foundation {
+            grid-column: 1 / 3;
+            background-color: #e3f2fd;
+        }
+        .people {
+            background-color: #fff3e0;
+        }
+        .conference {
+            background-color: #f0f4c3;
+        }
+        .application {
+            grid-column: 1 / 4;
+            background-color: #e8f5e9;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 8px 0;
+            padding: 5px;
+            border-left: 3px solid #3498db;
+        }
+        .arrow {
+            text-align: center;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .timeline-item {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>『サイバネティクス学者たち』図解</h1>
+    
+    <div class="timeline">
+        <div class="timeline-item">1940年代<br>起源（ウィーナー）</div>
+        <div class="timeline-item">1946-1953<br>メーシー会議</div>
+        <div class="timeline-item">現代<br>応用分野</div>
+    </div>
+
+    <div class="container">
+        <div class="box foundation">
+            <h2>サイバネティクスの基礎</h2>
+            <ul>
+                <li>定義：システム制御と通信の科学</li>
+                <li>核心理念：フィードバック機構</li>
+                <li>関連分野：情報理論・生物学・工学</li>
+            </ul>
+        </div>
+
+        <div class="box people">
+            <h2>主要人物</h2>
+            <ul>
+                <li>ノーバート・ウィーナー</li>
+                <li>グレゴリー・ベイトソン</li>
+                <li>ジョン・フォン・ノイマン</li>
+                <li>ウォーレン・マクカロック</li>
+            </ul>
+        </div>
+
+        <div class="box conference">
+            <h2>メーシー会議</h2>
+            <ul>
+                <li>開催期間：1946-1953</li>
+                <li>参加者：20名以上の専門家</li>
+                <li>成果：学際的協力のモデル</li>
+            </ul>
+        </div>
+
+        <div class="box application">
+            <h2>現代への応用</h2>
+            <div style="display: flex; justify-content: space-around;">
+                <div>🚄 交通制御</div>
+                <div>🤖 人工知能</div>
+                <div>🌐 ネットワーク</div>
+                <div>🧠 認知科学</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // アニメーション用のスクリプト
+        document.querySelectorAll('.box').forEach((box, index) => {
+            setTimeout(() => {
+                box.style.transform = 'scale(1)';
+                box.style.opacity = '1';
+            }, index * 200);
+        });
+    </script>
+</body>
+</html>
